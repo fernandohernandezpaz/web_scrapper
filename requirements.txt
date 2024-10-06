@@ -1,2 +1,4 @@
 scrapy==2.11.2
-
+selenium==4.25.0
+scrapy-selenium==0.0.7
+webdriver-manager==4.0.2
