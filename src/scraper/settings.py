@@ -9,8 +9,8 @@
 
 BOT_NAME = "scraper"
 
-SPIDER_MODULES = ["scraper.spiders"]
-NEWSPIDER_MODULE = "scraper.spiders"
+SPIDER_MODULES = ["src.scraper.spiders"]
+NEWSPIDER_MODULE = "src.scraper.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "scraper (+http://www.yourdomain.com)"
@@ -96,8 +96,11 @@ SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = None
 SELENIUM_DRIVER_ARGUMENTS = [
     '--window-size=1920,1200',
-    '--headless-new',
-    '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--disable-images'
+    '--headless=new',
+    '--disable-gpu',
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
+    '--disable-images'
 ]
 
 SELENIUM_BROWSER_OPTIONS = {}
